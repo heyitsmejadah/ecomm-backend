@@ -16,8 +16,6 @@ router.get('/', async (req, res) => {
   } catch {
     res.status(500).json(error);
   }
-  // FIX THIS HERE DELETE IT
-  Product.findAll()
 });
 
 // get one product
