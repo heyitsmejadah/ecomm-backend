@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { Product, Category, Tag, ProductTag } = require('../../models');
 
-// The `/api/products` endpoint
+// The `/api/products`endpoint
+
 
 // get all products
 router.get('/', async (req, res) => {
@@ -15,6 +16,8 @@ router.get('/', async (req, res) => {
   } catch {
     res.status(500).json(error);
   }
+  // FIX THIS HERE DELETE IT
+  Product.findAll()
 });
 
 // get one product
